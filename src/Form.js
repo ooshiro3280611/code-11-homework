@@ -14,7 +14,7 @@ const Form = () => {
 
 const FormWrap = styled.form`
     input {
-        width: 800px;
+        width: 500px;
     }
 `
 
