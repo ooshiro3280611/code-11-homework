@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Item = () => {
+const Item = ({ content, id }) => {
+    const [isDone, setIsDone] = useState(false)
+    let btnText = isDone ? '戻す' : '完了！'
+
+    const handleClick = () => {
+        setIsDone(!isDone)
+    }
     return (
         <li>
-            サンプル
+            <span>{id}:</span>
+            <span>{content}</span>
+            <button onClick={handleClick}>
+                {btnText}
+            </button>
         </li>
     )
 }
