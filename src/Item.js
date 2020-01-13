@@ -9,7 +9,7 @@ const Item = ({ content, id }) => {
     }
     return (
         <li>
-            <span>{id}:</span>
+            <span>{id + 1}:</span>
             <span>{content}</span>
             <button onClick={handleClick}>
                 {btnText}
